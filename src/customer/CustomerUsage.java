@@ -27,7 +27,6 @@ public class CustomerUsage {
         customer.addReturn(1, "pen");
         customer.showReturns();
 
-
         //modify addresses
         DeliveryAddress deliveryAddress = new DeliveryAddress("Main", 5, "Bologna");
         customer.changeDeliveryAddress(deliveryAddress);
