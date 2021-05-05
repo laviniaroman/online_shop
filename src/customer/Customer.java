@@ -115,6 +115,7 @@ public class Customer {
             scanner.next();
         }
         String city = scanner.nextLine();
+        scanner.close();
         deliveryAddress.setStreet(streetName);
         deliveryAddress.setStreetNumber(streetNumber);
         deliveryAddress.setCity(city);
