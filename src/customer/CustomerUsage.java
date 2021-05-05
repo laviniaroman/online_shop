@@ -15,17 +15,21 @@ public class CustomerUsage {
         customer.addOrder(1);
         customer.addOrder(2);
         customer.showOrders();
+        System.out.println("\n");
 
         //check wishlist
         customer.addToWishlist("water");
         customer.addToWishlist("phone");
         customer.addToWishlist("dress");
         customer.showWishlist();
+        System.out.println("\n");
 
         //return a product
         customer.addReturn(1, "car");
         customer.addReturn(1, "pen");
+        System.out.println("\n");
         customer.showReturns();
+        System.out.println("\n");
 
         //modify addresses
         DeliveryAddress deliveryAddress = new DeliveryAddress("Main", 5, "Bologna");

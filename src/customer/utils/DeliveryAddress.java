@@ -25,7 +25,7 @@ public class DeliveryAddress {
 
     @Override
     public String toString() {
-        return "DeliveryAddress{" +
+        return "DeliveryAddress" +"\n"+"{" +
                 "street='" + street + '\'' +
                 ", streetNumber=" + streetNumber +
                 ", city='" + city + '\'' +
