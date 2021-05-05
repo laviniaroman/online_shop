@@ -11,11 +11,6 @@ public class CustomerUsage {
         customer.setEmailAddress("tt@gmail.com");
         customer.setPassword("myPassword");
 
-        //modify addresses
-        DeliveryAddress deliveryAddress = new DeliveryAddress("Main", 5, "Bologna");
-        customer.changeDeliveryAddress(deliveryAddress);
-        System.out.println(deliveryAddress);
-
         //check orders
         customer.addOrder(1);
         customer.addOrder(2);
@@ -32,6 +27,11 @@ public class CustomerUsage {
         customer.addReturn(1, "pen");
         customer.showReturns();
 
+
+        //modify addresses
+        DeliveryAddress deliveryAddress = new DeliveryAddress("Main", 5, "Bologna");
+        customer.changeDeliveryAddress(deliveryAddress);
+        System.out.println(deliveryAddress);
 
     }
 }

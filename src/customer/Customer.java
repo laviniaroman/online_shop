@@ -92,30 +92,30 @@ public class Customer {
 
     //manage addresses
     public void changeDeliveryAddress(DeliveryAddress deliveryAddress) {
-        String streetName = null;
-        int streetNumber = 0;
-        String city = null;
+
         System.out.println("Enter the street name: ");
         while (!scanner.hasNext("[A-Za-z]*")) {
             System.out.println("Invalid input. Enter a valid street name.");
             scanner.next();
+            scanner.nextLine();
         }
-        streetName = scanner.nextLine();
+       String streetName = scanner.nextLine();
 
         System.out.println("Enter the street number: ");
-        scanner.nextLine();
         while (!scanner.hasNextInt()) {
             System.out.println("That's not a number!");
             scanner.next();
         }
-        streetNumber = scanner.nextInt();
+        int streetNumber = scanner.nextInt();
         scanner.nextLine();
+
         System.out.println("Enter the city name: ");
         while (!scanner.hasNext("[A-Za-z]*")) {
             System.out.println("Invalid input. Enter a valid city name.");
             scanner.next();
         }
-        city = scanner.nextLine();
+        String city = scanner.nextLine();
+
         deliveryAddress.setStreet(streetName);
         deliveryAddress.setStreetNumber(streetNumber);
         deliveryAddress.setCity(city);
